@@ -1,0 +1,126 @@
+:root {
+
+    --greenText: rgb(80, 200, 80);
+    --greenTextShadow: 0 0 4px rgba(60, 200, 60, 0.6);
+    --blueBoxShadow: 0 0 10px rgba(100, 100, 255, 1), 0 0 15px rgba(100, 100, 255, 0.6);
+    --redBoxShadow: 0 0 10px rgba(255, 100, 100, 1), 0 0 15px rgba(255, 100, 100, 0.6);
+    --greenBoxShadow: 0 0 10px rgba(100, 255, 100, 1), 0 0 15px rgba(100, 255, 100, 0.6);
+    --whiteTextGlow: 0 0 15px rgba(100, 100, 200, 1);
+    --greenBackgGrad: linear-gradient(180deg, rgba(20, 70, 20, 1), rgba(20, 100, 20, 1), rgba(100, 200, 100, 1), rgba(20, 100, 20, 1), rgba(20, 70, 20, 1));
+    --blueBackgGrad: linear-gradient(180deg, rgba(20, 20, 70, 1), rgba(20, 20, 100, 1), rgba(100, 100, 200, 1), rgba(20, 20, 100, 1), rgba(20, 20, 70, 1));
+    --redBackgGrad: linear-gradient(180deg, rgba(70, 20, 20, 1),  rgba(100, 20, 20, 1), rgba(200, 100, 100, 1), rgba(100, 20, 20, 1), rgba(70, 20, 20, 1));
+    --inputGrad: linear-gradient(180deg, rgb(60, 60, 60), rgb(20, 20, 20), rgb(60, 60, 60));
+
+}
+
+.card {background: linear-gradient(180deg, rgb(20, 20, 20), rgb(60, 60, 60), rgb(20, 20, 20))}
+
+h1 {
+    font-family: "VT323", monospace;
+    font-size: 60px;
+    text-shadow: 2px 2px 0 rgba(20, 20, 20, 0.4);
+}
+
+ul {
+    text-align: center;
+    font-family: "VT323", monospace;
+    font-size: 30px;
+    text-shadow: 0 0 4px rgba(180,180,250,0.8), 0 0 8px rgba(180,180,250,0.6);
+    background-color: rgb(20,20,20);
+    box-shadow: 0 0 15px rgba(180,180,250,0.8);
+    width: 600px;
+    margin: 0 auto;
+    border: dashed 10px;
+    border-color: rgba(250,250,250,1);
+    font-size: 40px;
+    color: white;
+    list-style-type: none;
+}
+
+li {
+    font-family: "VT323", monospace;
+    font-size: 30px;
+}
+
+input {
+    font-family: "VT323", monospace;
+    font-size: 30px;
+}
+
+[type="submit"] {
+    font-family: "VT323", monospace;
+    font-size: 30px;
+    margin-left: -40px;
+}
+
+#addNupdate-id {
+    margin: -40px 40px 0 40px;
+    width: 150px;
+    height: 80px;
+    font-size: 40px;
+    box-shadow: var(--blueBoxShadow);
+    background: var(--blueBackgGrad);
+}
+
+#edit {
+    padding: 20px -40px 0 0;
+}
+
+label {
+    font-family: "VT323", monospace;
+    font-size: 40px;
+    color: var(--greenText);
+    text-shadow: var(--greenTextShadow);
+}
+
+h1 {
+    color: var(--greenText);
+    text-shadow: var(--greenTextShadow);
+}
+
+[type="text"] {
+    color: var(--greenText);
+    text-shadow: var(--greenTextShadow);
+    z-index: 1;
+}
+
+[name="edit"] {
+    margin: -70px 0 0 -30px;
+    color: var(--whiteTextGlow);
+    box-shadow: var(--redBoxShadow);
+    background: var(--redBackgGrad);  
+}
+
+[name="done"] {
+    margin: -70px 10px 0 0;
+    color: var(--whiteTextGlow);
+    box-shadow: var(--greenBoxShadow);
+    background: var(--greenBackgGrad);
+}
+
+[name="task"] {
+    margin: 10px 0 0 0;
+    height: 80px;
+    font-size: 30px;
+    color: var(--greenText);
+    text-shadow: var(--greenTextShadow);
+    background: var(--inputGrad);
+}
+
+[for="task"] {
+    color: var(--greenText);
+    text-shadow: var(--greenTextShadow);
+}
+
+[name="due_date"] {
+    width: 250px;
+    color: var(--greenText);
+    text-shadow: var(--greenTextShadow);
+    background: var(--inputGrad);
+}
+
+[for="due_date"] {
+    margin: 20px 0 0 450px;
+    color: var(--greenText);
+    text-shadow: var(--greenTextShadow);
+}
